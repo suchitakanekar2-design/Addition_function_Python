@@ -1,0 +1,19 @@
+name: greeting and listing file
+
+on: workflow_dispatch
+
+jobs:
+  demo:
+    name: demo-job
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+        
+      - name: list file
+        run: ls -l
+        
+      - name: Greeting
+        run: echo "hello suchita"
+    
