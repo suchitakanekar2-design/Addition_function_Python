@@ -1,7 +1,11 @@
 name: greeting and listing file
 
-on: workflow_dispatch
-
+on: 
+  push:
+    branches:
+    - manin
+    - features/*
+    
 jobs:
   demo:
     name: demo-job
